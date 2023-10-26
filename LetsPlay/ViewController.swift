@@ -48,7 +48,7 @@ class ViewController: UIViewController {
 
         quizButton = UIButton(type: .system)
         quizButton.setTitle("Quiz", for: .normal)
-        quizButton.tintColor = .white
+        quizButton.tintColor = .blue
         quizButton.addTarget(self, action: #selector(moveToQuiz), for: .touchUpInside)
         quizButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .title1)
         stackView.addArrangedSubview(quizButton)
