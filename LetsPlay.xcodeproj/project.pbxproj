@@ -17,10 +17,19 @@
 		B5592BE5268C4C9200B491F7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5592BE4268C4C9200B491F7 /* Question.swift */; };
 		BB899E062AEA8C68006C11EB /* AmazonIVSPlayer-iOS.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB899E052AEA8C68006C11EB /* AmazonIVSPlayer-iOS.xcframework */; };
 		BB899E072AEA8C68006C11EB /* AmazonIVSPlayer-iOS.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB899E052AEA8C68006C11EB /* AmazonIVSPlayer-iOS.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D4C86B202B0259C800758D55 /* LetsPlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C86B1F2B0259C800758D55 /* LetsPlayTests.swift */; };
+		D4C86B282B025ABC00758D55 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C86B272B025ABC00758D55 /* PlayerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B5592BEF268C621300B491F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5592BC2268C480900B491F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5592BC9268C480900B491F7;
+			remoteInfo = LetsPlay;
+		};
+		D4C86B212B0259C800758D55 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5592BC2268C480900B491F7 /* Project object */;
 			proxyType = 1;
@@ -57,6 +66,9 @@
 		B5592BEA268C621300B491F7 /* LetsPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5592BEE268C621300B491F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB899E052AEA8C68006C11EB /* AmazonIVSPlayer-iOS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "AmazonIVSPlayer-iOS.xcframework"; sourceTree = "<group>"; };
+		D4C86B1D2B0259C800758D55 /* LetsPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C86B1F2B0259C800758D55 /* LetsPlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsPlayTests.swift; sourceTree = "<group>"; };
+		D4C86B272B025ABC00758D55 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B5592BE7268C621300B491F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C86B1A2B0259C800758D55 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -100,6 +119,7 @@
 			children = (
 				B5592BCC268C480900B491F7 /* LetsPlay */,
 				B5592BEB268C621300B491F7 /* LetsPlayUITests */,
+				D4C86B1E2B0259C800758D55 /* LetsPlayTests */,
 				B5592BCB268C480900B491F7 /* Products */,
 				BB899E042AEA8C68006C11EB /* Frameworks */,
 			);
@@ -110,6 +130,7 @@
 			children = (
 				B5592BCA268C480900B491F7 /* LetsPlay.app */,
 				B5592BEA268C621300B491F7 /* LetsPlayUITests.xctest */,
+				D4C86B1D2B0259C800758D55 /* LetsPlayTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +174,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D4C86B1E2B0259C800758D55 /* LetsPlayTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4C86B1F2B0259C800758D55 /* LetsPlayTests.swift */,
+				D4C86B272B025ABC00758D55 /* PlayerController.swift */,
+			);
+			path = LetsPlayTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,13 +222,31 @@
 			productReference = B5592BEA268C621300B491F7 /* LetsPlayUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D4C86B1C2B0259C800758D55 /* LetsPlayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C86B262B0259C800758D55 /* Build configuration list for PBXNativeTarget "LetsPlayTests" */;
+			buildPhases = (
+				D4C86B192B0259C800758D55 /* Sources */,
+				D4C86B1A2B0259C800758D55 /* Frameworks */,
+				D4C86B1B2B0259C800758D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4C86B222B0259C800758D55 /* PBXTargetDependency */,
+			);
+			name = LetsPlayTests;
+			productName = LetsPlayTests;
+			productReference = D4C86B1D2B0259C800758D55 /* LetsPlayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B5592BC2268C480900B491F7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					B5592BC9268C480900B491F7 = {
@@ -206,6 +254,10 @@
 					};
 					B5592BE9268C621300B491F7 = {
 						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B5592BC9268C480900B491F7;
+					};
+					D4C86B1C2B0259C800758D55 = {
+						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = B5592BC9268C480900B491F7;
 					};
 				};
@@ -225,6 +277,7 @@
 			targets = (
 				B5592BC9268C480900B491F7 /* LetsPlay */,
 				B5592BE9268C621300B491F7 /* LetsPlayUITests */,
+				D4C86B1C2B0259C800758D55 /* LetsPlayTests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,6 +294,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B5592BE8268C621300B491F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C86B1B2B0259C800758D55 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,6 +329,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4C86B192B0259C800758D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C86B282B025ABC00758D55 /* PlayerController.swift in Sources */,
+				D4C86B202B0259C800758D55 /* LetsPlayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -276,6 +345,11 @@
 			isa = PBXTargetDependency;
 			target = B5592BC9268C480900B491F7 /* LetsPlay */;
 			targetProxy = B5592BEF268C621300B491F7 /* PBXContainerItemProxy */;
+		};
+		D4C86B222B0259C800758D55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5592BC9268C480900B491F7 /* LetsPlay */;
+			targetProxy = D4C86B212B0259C800758D55 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -590,6 +664,79 @@
 			};
 			name = Tests;
 		};
+		D4C86B232B0259C800758D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8GDG279224;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LetsPlayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsPlay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LetsPlay";
+			};
+			name = Debug;
+		};
+		D4C86B242B0259C800758D55 /* Tests */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8GDG279224;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LetsPlayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsPlay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LetsPlay";
+			};
+			name = Tests;
+		};
+		D4C86B252B0259C800758D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8GDG279224;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LetsPlayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsPlay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LetsPlay";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -619,6 +766,16 @@
 				B5592BF2268C621300B491F7 /* Debug */,
 				BB4BFDE4268F0F34000FB748 /* Tests */,
 				B5592BF3268C621300B491F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4C86B262B0259C800758D55 /* Build configuration list for PBXNativeTarget "LetsPlayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C86B232B0259C800758D55 /* Debug */,
+				D4C86B242B0259C800758D55 /* Tests */,
+				D4C86B252B0259C800758D55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

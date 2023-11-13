@@ -42,6 +42,17 @@
                referenceType = "1">
             </LocationScenarioReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D4C86B1C2B0259C800758D55"
+               BuildableName = "LetsPlayTests.xctest"
+               BlueprintName = "LetsPlayTests"
+               ReferencedContainer = "container:LetsPlay.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
